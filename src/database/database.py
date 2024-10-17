@@ -23,6 +23,7 @@ class TemporizadorDB:
                                     FOREIGN KEY (concentration_type_id) REFERENCES concentration_types(id)
                                 )"""
             )
+
             self.conn.execute(
                 """CREATE TABLE IF NOT EXISTS concentration_sessions (
                                     id INTEGER PRIMARY KEY AUTOINCREMENT,
